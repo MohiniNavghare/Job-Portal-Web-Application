@@ -1,0 +1,151 @@
+/* .jobcard-container{
+    display:flex;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    gap:20px;
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    transition:0.2s ease;
+    border: 1 px solid #e0e0e0;
+}
+.jobcard-container:hover{
+    box-shadow: 0 4px8px rgb(0,0,0,0.1 );
+    transform: translate(-2px);
+}
+.jobcard-image{
+   width: 80px;
+   height: 80px;
+   border-radius: 8px;
+   object-fit:cover;
+   background-color: white;
+    border:1px solid black;
+}
+.jobcard-content{
+    flex-grow:1;
+}
+.jobcard-company{
+    font-size: 14px;
+    color:#888;
+    margin: 0;
+}
+jobcard-title{
+    font-size:18px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: black;
+}
+.jobcard-details{
+    display:flex;
+    gap: 15px;
+    font-size:14px;
+    color: #555;
+    align-items:center;
+    justify-content: space-between;
+}
+jobcard-type{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    font: size 5px;
+    color: #555;
+
+}
+.icons{
+    font-size: 18px;
+    color: #666;
+
+} */
+ .jobcard-container{
+    display:flex;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    gap:20px;
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+/* Hover effect */
+.jobcard-container:hover{
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+    border-color:#0077ff;
+}
+
+/* Company Image */
+.jobcard-image{
+   width: 80px;
+   height: 80px;
+   border-radius: 10px;
+   object-fit:cover;
+   background-color: white;
+   border:1px solid #ddd;
+   transition: transform 0.3s ease;
+}
+
+/* Image animation */
+.jobcard-container:hover .jobcard-image{
+   transform: scale(1.05);
+}
+
+.jobcard-content{
+    flex-grow:1;
+}
+
+/* Company Name */
+.jobcard-company{
+    font-size: 14px;
+    color:#888;
+    margin: 0;
+}
+
+/* Job Title */
+.jobcard-title{
+    font-size:18px;
+    font-weight: bold;
+    margin: 6px 0;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.jobcard-container:hover .jobcard-title{
+    color:#0077ff;
+}
+
+/* Job details */
+.jobcard-details{
+    display:flex;
+    gap: 15px;
+    font-size:14px;
+    color: #555;
+    align-items:center;
+    justify-content: space-between;
+}
+
+/* Job Type */
+.jobcard-type{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    font-size: 13px;
+    color: #555;
+}
+
+/* Icons */
+.icons{
+    font-size: 18px;
+    color: #666;
+    transition: transform 0.3s ease;
+}
+
+.jobcard-container:hover .icons{
+    transform: scale(1.2);
+    color:#0077ff;
+}

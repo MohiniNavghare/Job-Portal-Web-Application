@@ -1,0 +1,232 @@
+/* .jobinfo-wrapper{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 16px;
+    background-color: antiquewhite;
+    min-height: 10vh;
+}
+.back-btn{
+    display:inline-flex;
+    align-items: center;
+    gap:4px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.jobinfo-container{
+ display: flex;
+ gap:16px;
+ background-color: white;
+ padding: 16px;
+ border-radius: 8px;
+ flex-wrap: wrap;
+
+}
+.jobinfo-image{
+    width: 150px;
+    height:150px;
+    object-fit:contain;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+.jobinfo-content{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+.jobinfo-company{
+    font-size: 18px;
+    font-weight:bold;
+    color: darkblue;
+}
+.jobinfo-title{
+    font-size: 16px;
+    font-weight: bold;
+    color:#333;
+}
+.jobinfo-meta{
+    display: flex;
+    gap: 16px;
+    flex-wrap:wrap;
+}
+.jobinfo-meta-item{
+    display: flex;
+    align-items:center;
+    gap:4px;
+    color: #555;
+    font-size: 14px;
+}
+.icon{
+    font-size: 16px;
+    color: #007bff;
+}
+.jobinfo-description{
+    margin-top: 16px;
+}
+.jobinfo-description h3{
+    margin-bottom: 8px;
+}
+.jobinfo-description p{
+    line-height:1.5;
+    color:#333;
+}
+.apply-btn{
+    margin-top: 16px;
+    padding:12px 16px;
+    background-color:#28a745;
+    color:white;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.apply-btn:hover{
+    background-color: #218838;
+    
+} */
+ .jobinfo-wrapper{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background: linear-gradient(135deg,#fdf6ec,#f4f9ff);
+    min-height: 100vh;
+}
+
+/* Back Button */
+.back-btn{
+    display:inline-flex;
+    align-items: center;
+    gap:6px;
+    padding: 8px 14px;
+    background-color: #007bff;
+    color: white;
+    border:none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover{
+    background-color:#0056b3;
+    transform: translateY(-2px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Main Card */
+.jobinfo-container{
+ display: flex;
+ gap:20px;
+ background-color: white;
+ padding: 20px;
+ border-radius: 12px;
+ flex-wrap: wrap;
+ box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+ transition: all 0.3s ease;
+}
+
+.jobinfo-container:hover{
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Company Image */
+.jobinfo-image{
+    width: 150px;
+    height:150px;
+    object-fit:contain;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding:8px;
+    transition: transform 0.3s ease;
+}
+
+.jobinfo-container:hover .jobinfo-image{
+    transform: scale(1.05);
+}
+
+/* Content */
+.jobinfo-content{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+/* Company */
+.jobinfo-company{
+    font-size: 20px;
+    font-weight:bold;
+    color: #003366;
+}
+
+/* Job Title */
+.jobinfo-title{
+    font-size: 18px;
+    font-weight: bold;
+    color:#333;
+}
+
+/* Meta Info */
+.jobinfo-meta{
+    display: flex;
+    gap: 16px;
+    flex-wrap:wrap;
+}
+
+.jobinfo-meta-item{
+    display: flex;
+    align-items:center;
+    gap:6px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Icons */
+.icon{
+    font-size: 16px;
+    color: #007bff;
+    transition: transform 0.3s ease;
+}
+
+.jobinfo-meta-item:hover .icon{
+    transform: scale(1.2);
+}
+
+/* Description */
+.jobinfo-description{
+    margin-top: 16px;
+}
+
+.jobinfo-description h3{
+    margin-bottom: 8px;
+}
+
+.jobinfo-description p{
+    line-height:1.6;
+    color:#333;
+}
+
+/* Apply Button */
+.apply-btn{
+    margin-top: 18px;
+    padding:12px 18px;
+    background: linear-gradient(45deg,#28a745,#3ddc84);
+    color:white;
+    border:none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.apply-btn:hover{
+    background: linear-gradient(45deg,#218838,#2ecc71);
+    transform: translateY(-2px);
+    box-shadow:0 6px 14px rgba(0,0,0,0.2);
+}
+
+.apply-btn:active{
+    transform: scale(0.97);
+}

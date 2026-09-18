@@ -1,0 +1,230 @@
+/* .main-wrapper{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
+  min-width: 100vh;
+}
+
+.logo-title{
+  font-size: 24px;
+  padding: 16px;
+}
+
+.header-box{
+  padding: 16px;
+}
+
+.search-box{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: white;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.search-icon{
+  font-size: 24px;
+  color: bisque;
+}
+
+.search-input{
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+.search-btn{
+  padding: 8px 16px;
+  background-color: aqua;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-content{
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+.filter-box{
+  width:25%;
+  background-color:white;
+  padding:16px;
+  border-radius:8px;
+}
+
+.location-input-box{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:8px 0;
+  padding:8px;
+  border:1px solid black;
+  border-radius:4px;
+}
+
+.location-input{
+  flex:1;
+  border:none;
+  outline:none;
+}
+
+.error-box{
+  background-color:black;
+  color:aliceblue;
+  padding:16px;
+  margin:16px;
+  border-radius:8px;
+}
+
+.loading-box{
+  text-align:center;
+  padding:32px;
+} */
+
+.main-wrapper{
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #eaf6ff, #f5fbff);
+  min-height: 100vh;
+}
+
+/* Logo */
+.logo-title{
+  font-size: 28px;
+  padding: 16px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/* Header */
+.header-box{
+  padding: 16px;
+}
+
+/* Search Box */
+.search-box{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.search-box:hover{
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+.search-icon{
+  font-size: 24px;
+  color: #ff9f43;
+}
+
+/* Search Input */
+.search-input{
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Search Button */
+.search-btn{
+  padding: 8px 18px;
+  background: linear-gradient(45deg,#00c6ff,#0072ff);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.search-btn:active{
+  transform: scale(0.95);
+}
+
+/* Main Content Layout */
+.main-content{
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* Filter Box */
+.filter-box{
+  width:25%;
+  background-color:white;
+  padding:16px;
+  border-radius:10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.filter-box:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Location Input */
+.location-input-box{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:8px 0;
+  padding:8px;
+  border:1px solid #ddd;
+  border-radius:6px;
+  transition: all 0.3s ease;
+}
+
+.location-input-box:focus-within{
+  border-color:#0072ff;
+  box-shadow: 0 0 6px rgba(0,114,255,0.3);
+}
+
+.location-input{
+  flex:1;
+  border:none;
+  outline:none;
+}
+
+/* Error Box */
+.error-box{
+  background: linear-gradient(45deg,#ff4e50,#c0392b);
+  color:white;
+  padding:16px;
+  margin:16px;
+  border-radius:8px;
+  font-weight: bold;
+  animation: shake 0.4s;
+}
+
+/* Loading Box */
+.loading-box{
+  text-align:center;
+  padding:32px;
+  font-size:18px;
+  font-weight: bold;
+  color:#444;
+}
+
+/* Small animation */
+@keyframes shake{
+  0%{transform: translateX(0);}
+  25%{transform: translateX(-5px);}
+  50%{transform: translateX(5px);}
+  75%{transform: translateX(-5px);}
+  100%{transform: translateX(0);}
+}
