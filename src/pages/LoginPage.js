@@ -1,0 +1,8 @@
+import React,{useState} from "react";
+import { Link,useLocation,useNavigate } from "react-router-dom";
+import { MdEmail,MdLock,MdLogin } from "react-icons/md";
+import "./Auth.css";
+function LoginPage(){const [email,setEmail]=useState("");const [password,setPassword]=useState("");const [error,setError]=useState("");const nav=useNavigate();const loc=useLocation();
+ const submit=e=>{e.preventDefault();setError("");const users=JSON.parse(localStorage.getItem("psk_users")||"[]");const user=users.find(u=>u.email.toLowerCase()===email.trim().toLowerCase()&&u.password===password);if(!user){setError("Invalid email or password.");return}localStorage.setItem("psk_current_user",JSON.stringify({name:user.name,email:user.email}));window.dispatchEvent(new Event("authchange"));nav(loc.state?.from||"/profile",{replace:true})};
+ return <div className="auth-page"><div className="auth-card"><div className="auth-icon"><MdLogin/></div><h1>Welcome back</h1><p>Login to your PSK Job Portal account.</p>{error&&<div className="auth-error">{error}</div>}<form onSubmit={submit}><label>Email<div className="auth-input"><MdEmail/><input type="email" required value={email} onChange={e=>setEmail(e.target.value)} placeholder="you@example.com"/></div></label><label>Password<div className="auth-input"><MdLock/><input type="password" required value={password} onChange={e=>setPassword(e.target.value)} placeholder="••••••••"/></div></label><button className="auth-btn">Login</button></form><div className="auth-footer">Don't have an account? <Link to="/register">Create one</Link></div></div></div>}
+export default LoginPage;
